@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="FR-fr">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Bon de commande 2</title>
+      <link rel="stylesheet" href="/dist/output.css" />
+   </head>
+   <body class="flex flex-col justify-center items-center m-8">
+      <header class="flex w-full justify-between items-center">
+         <div class="flex flex-col items-center justify-center">
+            <img class="w-52 h-52" src="/assets/logo.jpg" alt="Logo" />
+            <p>15 rue de la Madeleine 41200 Millançay</p>
+         </div>
+         <div class="flex flex-col w-auto h-1/2 text-center justify-center items-center">
+            <div class="p-5 bg-slate-300">
+               <h1 class="text-3xl">Bon de commande</h1>
+               <p>Abonnement logiciel "formadmin"</p>
+            </div>
+
+            <p class="text-red-700 font-semibold">Abonnement 2022</p>
+         </div>
+      </header>
+      <div class="w-11/12 h-1 m-5 bg-slate-300"><!--separator --></div>
+
+      <form class="w-full">
+         <!-- Form input section-->
+         <div class="flex flex-col w-full items-center">
+            <h2 class="text-blue-500 mb-4 w-full border-b border-blue-500">Désignation du client</h2>
+
+            <div class="flex m-2">
+               <div class="flex mr-2">
+                  <label class="mr-2" for="surname">Nom :</label>
+                  <input class="border border-black rounded-full pl-2" type="text" id="surname" name="surname" />
+               </div>
+               <div class="flex mr-2">
+                  <label class="mr-2" for="firstname">Prénom :</label>
+                  <input class="border border-black rounded-full pl-2" type="text" id="firstname" name="firstname" />
+               </div>
+            </div>
+            <div class="flex m-2 w-full justify-center">
+               <label class="mr-2" for="business">Etablissement :</label>
+               <input class="border border-black rounded-full pl-2 w-1/2" type="text" id="business" name="business" />
+            </div>
+            <div class="flex m-2 w-full justify-center">
+               <label class="mr-2" for="address">Adresse :</label>
+               <input class="border border-black rounded-full pl-2 w-1/2" type="text" id="address" name="address" />
+            </div>
+            <div class="flex m-2">
+               <div class="mr-2">
+                  <label class="mr-2" for="zipcode">Code postal :</label>
+                  <input class="border border-black rounded-full pl-2" type="number" id="zipcode" name="zipcode" />
+               </div>
+               <div>
+                  <label class="mr-2" for="city">Ville :</label>
+                  <input class="border border-black rounded-full pl-2" type="text" id="city" name="city" />
+               </div>
+            </div>
+            <div class="flex m-2">
+               <div class="mr-2">
+                  <label class="mr-2" for="mail">Mail :</label>
+                  <input class="border border-black rounded-full pl-2" type="email" id="mail" name="mail" />
+               </div>
+               <div>
+                  <label class="mr-2" for="phone">Téléphone :</label>
+                  <input class="border border-black rounded-full pl-2" type="number" id="phone" name="phone" />
+               </div>
+            </div>
+         </div>
+         <div class="w-11/12 h-1 m-5 bg-slate-300"><!--separator --></div>
+         <div class="w-full mt-4">
+            <h2 class="text-blue-500 mb-4 w-full border-b border-blue-500">
+               Je choisis ma version et mon mode d'abonnement en cochant la case correspondante
+            </h2>
+
+            <p class="text-red-600">
+               Pour l’abonnement annuel, le règlement peut se faire par chèque à l’ordre de de SAS LOGADMIN ou par virement
+            </p>
+            <p class="text-red-600 mt-2">Une facture vous sera adressée</p>
+         </div>
+         <table class="table-auto ml-auto mr-auto mt-8">
+            <thead>
+               <tr>
+                  <th class="text-center p-2 m-2 border-2 border-black bg-cyan-600 text-white">Version</th>
+                  <th></th>
+                  <th class="text-center p-2 m-2 border-2 border-black bg-cyan-600 text-white">Abonnement mensuel</th>
+                  <th></th>
+                  <th class="text-center p-2 m-2 border-2 border-black bg-cyan-600 text-white">Abonnement annuel</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td class="p-2 border-2 border-black bg-lime-100">Basique</td>
+                  <td></td>
+                  <td class="p-2 border-2 border-black bg-lime-100">
+                     <input type="radio" name="abonnement" id="abonnement1" value="abonnement1" />
+                     <label for="abonnement1">29 € HT/mois</label>
+                  </td>
+                  <td></td>
+                  <td class="p-2 border-2 border-black bg-lime-100">
+                     <input type="radio" name="abonnement" id="abonnement2" value="abonnement2" />
+                     <label for="abonnement2">290 € HT/an</label>
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td class="p-2 border-2 border-black bg-lime-200">BPF</td>
+                  <td></td>
+                  <td class="p-2 border-2 border-black bg-lime-200">
+                     <input type="radio" name="abonnement" id="abonnement3" value="abonnement3" />
+                     <label for="abonnement3">49 € HT/mois</label>
+                  </td>
+                  <td></td>
+                  <td class="p-2 border-2 border-black bg-lime-200">
+                     <input type="radio" name="abonnement" id="abonnement4" value="abonnement4" />
+                     <label for="abonnement4">490 € HT/an</label>
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td class="p-2 border-2 border-black bg-lime-300">CERTIF</td>
+                  <td></td>
+                  <td class="p-2 border-2 border-black bg-lime-300">
+                     <input type="radio" name="abonnement" id="abonnement5" value="abonnement5" />
+                     <label for="abonnement5">89 € HT/mois</label>
+                  </td>
+                  <td></td>
+                  <td class="p-2 border-2 border-black bg-lime-300">
+                     <input type="radio" name="abonnement" id="abonnement6" value="abonnement6" />
+                     <label for="abonnement6">890 HT/an</label>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         <h2 class="text-blue-500 mb-4 mt-4 w-full border-b border-blue-500">J'envoie mon RIB et mon autorisation de prélèvement</h2>
+         <!-- c'est pas plutot l'IBAN que tu demande pour les prélévements papa ?-->
+         <p>- Le prélèvement menseul sera effectué le 5 de chaque mois, <strong>MERCI de compléter l'autorisation</strong></p>
+         <p class="text-red-600 mt-4">
+            Pour l'abonnement annuel, le réglement peut se faire par chèque à l'ordre de <strong>SAS LOGADMIN</strong> ou par virement
+         </p>
+         <div class="w-11/12 h-1 m-5 bg-slate-300"><!--separator --></div>
+         <div class="mt-8 flex justify-between">
+            <div>
+               <p>Fait à {{location}}, Le {{date}}</p>
+            </div>
+            <div>
+               <p class="mb-2">Cachet et signature</p>
+               <div class="border border-black h-32">(J'ignore quel genre de signature éléctronique tu compte mettre en place)</div>
+            </div>
+         </div>
+         <div class="flex items-center justify-center mt-3">
+            <input
+               class="border border-blue-800 text-white rounded-full pl-2 pr-2 pt-1 pb-1 bg-blue-500 scale-100 hover:scale-110 active:scale-150 transition-all"
+               type="submit"
+               value="Envoyer"
+            />
+         </div>
+      </form>
+   </body>
+</html>

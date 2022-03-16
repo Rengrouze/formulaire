@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="FR-fr">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Bon de commande</title>
+      <link rel="stylesheet" href="/dist/output.css" />
+   </head>
+   <body class="flex flex-col justify-center items-center m-8">
+      <header class="flex w-full justify-between">
+         <div class="flex flex-col items-center justify-center">
+            <img class="w-52 h-52" src="/assets/logo.jpg" alt="Logo" />
+            <p>15 rue de la Madeleine 41200 Millançay</p>
+         </div>
+         <div class="flex flex-col w-auto h-1/2 text-center justify-center items-center">
+            <div class="p-5 bg-slate-300">
+               <h1 class="text-3xl">Bon de commande</h1>
+               <p>Logiciel "formadmin"</p>
+            </div>
+
+            <p class="text-red-700 font-semibold">LICENSE FORMADMIN</p>
+         </div>
+      </header>
+      <div class="w-11/12 h-1 m-5 bg-slate-300"><!--separator --></div>
+      <form class="w-full">
+         <!-- Form input section-->
+         <div class="flex flex-col w-full items-center">
+            <h2 class="text-blue-500 mb-4 w-full border-b border-blue-400">Désignation du client</h2>
+
+            <div class="flex m-2">
+               <div class="flex mr-2">
+                  <label class="mr-2" for="surname">Nom :</label>
+                  <input class="border border-black rounded-full pl-2" type="text" id="surname" name="surname" />
+               </div>
+               <div class="flex mr-2">
+                  <label class="mr-2" for="firstname">Prénom :</label>
+                  <input class="border border-black rounded-full pl-2" type="text" id="firstname" name="firstname" />
+               </div>
+            </div>
+            <div class="flex m-2 w-full justify-center">
+               <label class="mr-2" for="business">Etablissement :</label>
+               <input class="border border-black rounded-full pl-2 w-1/2" type="text" id="business" name="business" />
+            </div>
+            <div class="flex m-2 w-full justify-center">
+               <label class="mr-2" for="address">Adresse :</label>
+               <input class="border border-black rounded-full pl-2 w-1/2" type="text" id="address" name="address" />
+            </div>
+            <div class="flex m-2">
+               <div class="mr-2">
+                  <label class="mr-2" for="zipcode">Code postal :</label>
+                  <input class="border border-black rounded-full pl-2" type="number" id="zipcode" name="zipcode" />
+               </div>
+               <div>
+                  <label class="mr-2" for="city">Ville :</label>
+                  <input class="border border-black rounded-full pl-2" type="text" id="city" name="city" />
+               </div>
+            </div>
+            <div class="flex m-2">
+               <div class="mr-2">
+                  <label class="mr-2" for="mail">Mail :</label>
+                  <input class="border border-black rounded-full pl-2" type="email" id="mail" name="mail" />
+               </div>
+               <div>
+                  <label class="mr-2" for="phone">Téléphone :</label>
+                  <input class="border border-black rounded-full pl-2" type="number" id="phone" name="phone" />
+               </div>
+            </div>
+         </div>
+         <!-- information about package -->
+
+         <div class="w-full mt-4">
+            <h2 class="text-blue-400 mb-4 w-full border-b border-blue-400">
+               Achat de licence de logiciel "Formadmin" payable une seule fois lors de l'abonnement initial
+            </h2>
+            <table class="mr-auto ml-auto">
+               <thead class="border-black border">
+                  <tr>
+                     <th class="p-2">Acquisition license formadmin en une fois par chèque ou par virement</th>
+                     <th class="p-2">Coût HT</th>
+                     <th class="font-normal border border-black p-2">295 €</th>
+                  </tr>
+               </thead>
+               <tbody class="border border-black">
+                  <tr>
+                     <td></td>
+                     <td class="border border-black p-2 text-center font-bold">TVA 20 %</td>
+                     <td class="border border-black p-2">59 €</td>
+                  </tr>
+                  <tr>
+                     <td></td>
+                     <td class="border border-black p-2 font-bold">Total à régler pour la license</td>
+                     <td class="border border-black p-2">354 €</td>
+                  </tr>
+               </tbody>
+            </table>
+            <p>Payable par chèque ou virement à l'ordre de SAS LOGADMIN</p>
+         </div>
+         <div class="w-11/12 h-1 m-5 bg-slate-300"><!--separator --></div>
+         <!-- date, time, sign -->
+
+         <div class="mt-8 flex justify-between">
+            <div>
+               <p>Fait à {{location}}, Le {{date}}</p>
+            </div>
+            <div>
+               <p class="mb-2">Cachet et signature</p>
+               <div class="border border-black h-32">(J'ignore quel genre de signature éléctronique tu compte mettre en place)</div>
+            </div>
+         </div>
+         <div class="flex items-center justify-center mt-3">
+            <input
+               class="border border-blue-800 text-white rounded-full pl-2 pr-2 pt-1 pb-1 bg-blue-500 scale-100 hover:scale-110 active:scale-150 transition-all"
+               type="submit"
+               value="Envoyer"
+            />
+         </div>
+      </form>
+   </body>
+</html>
